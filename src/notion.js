@@ -104,12 +104,6 @@ export async function deleteOldUnreadFeedItemsFromNotion() {
               on_or_before: fetchBeforeDate.toJSON(),
             },
           },
-          {
-            property: 'Read',
-            checkbox: {
-              equals: true,
-            },
-          },
         ],
       },
     });
