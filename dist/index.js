@@ -48154,9 +48154,7 @@ async function addFeedItemToNotion(notionItem) {
           url: link
         },
         DateAdded: {
-          text: {
-            content: added
-          }
+          date: added
         }
       },
       children: content
