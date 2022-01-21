@@ -48223,7 +48223,7 @@ async function getNewFeedItemsFrom(feedUrl) {
     const {
       diffInDays
     } = timeDifference(todaysDate, blogPublishedDate);
-    return diffInDays === 0;
+    return true;
   });
 }
 
