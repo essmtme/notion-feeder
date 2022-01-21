@@ -16,7 +16,6 @@ async function index() {
       content: htmlToNotionBlocks(item.content),
     };
     await addFeedItemToNotion(notionItem);
-    console.log("nikki found item");
   }
 
   //await deleteOldUnreadFeedItemsFromNotion();
