@@ -48129,6 +48129,7 @@ async function addFeedItemToNotion(notionItem) {
   const {
     title,
     link,
+    added,
     content
   } = notionItem;
   const notion = new src/* Client */.KU({
@@ -48154,7 +48155,7 @@ async function addFeedItemToNotion(notionItem) {
         },
         DateAdded: {
           text: {
-            content: title
+            content: added
           }
         }
       },
