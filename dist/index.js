@@ -48180,11 +48180,6 @@ async function deleteOldUnreadFeedItemsFromNotion() {
           date: {
             on_or_before: fetchBeforeDate.toJSON()
           }
-        }, {
-          property: 'Read',
-          checkbox: {
-            equals: true
-          }
         }]
       }
     });
