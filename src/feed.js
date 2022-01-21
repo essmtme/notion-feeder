@@ -9,7 +9,7 @@ async function getNewFeedItemsFrom(feedUrl) {
   return rss.items.filter((item) => {
     const blogPublishedDate = new Date(item.pubDate).getTime() / 1000;
     const { diffInDays } = timeDifference(todaysDate, blogPublishedDate);
-    return diffInDays === 0;
+    return true;
   });
 }
 
