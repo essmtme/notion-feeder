@@ -48230,7 +48230,7 @@ async function getNewFeedItems() {
     const {
       feedUrl
     } = feeds[i];
-    console.log(`Fetching feed items from ${feedUrl}`);
+    console.log(`Fetching NIKKI feed items from ${feedUrl}`);
     const feedItems = await getNewFeedItemsFrom(feedUrl);
     allNewFeedItems = [...allNewFeedItems, ...feedItems];
   } // sort feed items by published date
