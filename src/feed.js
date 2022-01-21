@@ -23,6 +23,7 @@ export default async function getNewFeedItems() {
     console.log(`Fetching feed items from ${feedUrl}`);
     const feedItems = await getNewFeedItemsFrom(feedUrl);
     allNewFeedItems = [...allNewFeedItems, ...feedItems];
+    console.log(`Found feed items: ` + allNewFeedItems.length);
   }
 
   // sort feed items by published date
