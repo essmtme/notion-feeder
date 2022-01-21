@@ -15,8 +15,8 @@ async function index() {
       link: item.link,
       content: htmlToNotionBlocks(item.content),
     };
+    console.log('nikki found item');
     await addFeedItemToNotion(notionItem);
-    console.log("nikki found item");
   }
 
 }
