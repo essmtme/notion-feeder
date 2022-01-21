@@ -48166,7 +48166,7 @@ async function deleteOldUnreadFeedItemsFromNotion() {
   }); // Create a datetime which is 2 days earlier than the current time
 
   const fetchBeforeDate = new Date();
-  fetchBeforeDate.setDate(fetchBeforeDate.getDate() - 2); // Query the feed reader database
+  fetchBeforeDate.setDate(fetchBeforeDate.getDate() - 20); // Query the feed reader database
   // and fetch only those items that are unread or created before last 2 days
 
   let response;
@@ -48183,7 +48183,7 @@ async function deleteOldUnreadFeedItemsFromNotion() {
         }, {
           property: 'Read',
           checkbox: {
-            equals: false
+            equals: true
           }
         }]
       }
