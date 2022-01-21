@@ -13,6 +13,7 @@ async function index() {
     const notionItem = {
       title: item.title,
       link: item.link,
+      added: item['date-added'],
       content: htmlToNotionBlocks(item.content),
     };
     const x = 'found a item';
